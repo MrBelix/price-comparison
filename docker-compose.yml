@@ -1,0 +1,6 @@
+﻿services:
+  pricecomparison.webapi:
+    image: pricecomparison.webapi
+    build:
+      context: .
+      dockerfile: src/PriceComparison.WebApi/Dockerfile
