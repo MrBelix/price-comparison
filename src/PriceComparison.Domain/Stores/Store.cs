@@ -1,5 +1,6 @@
 using PriceComparison.Domain.Common.Primitives;
 
+
 namespace PriceComparison.Domain.Stores;
 
 public class Store: Entity<StoreId>, IAggregateRoot

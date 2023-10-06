@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using PriceComparison.Application.Behaviours;
 
 namespace PriceComparison.Application;
 
@@ -9,6 +10,8 @@ public static class DependencyInjection
         services.AddMediatR(config =>
         {
             config.RegisterServicesFromAssemblyContaining<ApplicationAssemblyReference>();
+
+            config.AddOpenBehavior(typeof(UnitOfWorkBehavior<,>));
         });
 
         return services;

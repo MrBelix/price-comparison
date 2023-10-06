@@ -18,8 +18,10 @@
         </Content>
     </ItemGroup>
 
+
     <ItemGroup>
-        <Folder Include="Controllers\"/>
+      <ProjectReference Include="..\PriceComparison.Application\PriceComparison.Application.csproj" />
+      <ProjectReference Include="..\PriceComparison.Persistence\PriceComparison.Persistence.csproj" />
     </ItemGroup>
 
 </Project>

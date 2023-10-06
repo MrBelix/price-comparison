@@ -10,4 +10,13 @@
         <ProjectReference Include="..\PriceComparison.Application\PriceComparison.Application.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Repositories\" />
+      <Folder Include="Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+    </ItemGroup>
+
 </Project>
